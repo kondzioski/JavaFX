@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" id="mainWindow" minHeight="600.0" minWidth="600.0" prefWidth="952.0" snapToPixel="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.ButtonController">
+  <children>
+    <MenuBar id="MenuBar" fx:id="Menu" prefHeight="24.0" prefWidth="600.0" AnchorPane.bottomAnchor="574.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+      <effect>
+        <Reflection bottomOpacity="0.13385826771653542" fraction="1.0" topOffset="2.0" topOpacity="0.5669291338582678" />
+      </effect>
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#menuFileClose" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" onAction="#menuEditDelete" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" onAction="#showHelpWindow" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TextArea fx:id="Sender" layoutX="444.0" layoutY="62.0" prefHeight="206.0" prefWidth="494.0" wrapText="true" />
+    <Button id="Button" fx:id="ButtonSend" contentDisplay="CENTER" layoutX="831.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="34.0" prefWidth="107.0" text="Send" textAlignment="CENTER" textFill="BLACK" textOverrun="WORD_ELLIPSIS" wrapText="false">
+      <font>
+        <Font name="DejaVu Serif Bold" size="13.0" />
+      </font>
+    </Button>
+    <TextArea fx:id="Receiver" editable="false" layoutX="444.0" layoutY="333.0" prefHeight="237.0" prefWidth="494.0" wrapText="true" />
+    <Button id="StartButton" layoutX="51.0" layoutY="165.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Start" />
+    <Button layoutX="51.0" layoutY="240.0" mnemonicParsing="false" onMousePressed="#sendMail" prefHeight="54.0" prefWidth="123.0" text="Mail" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</fx:root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="helpWindow" prefHeight="248.99990000000253" prefWidth="433.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.HelpWindowController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <MenuBar fx:id="MenuItem" minHeight="20.999900000002526" prefHeight="20.999900000002526" prefWidth="433.0" AnchorPane.bottomAnchor="228.0" AnchorPane.leftAnchor="0.5" AnchorPane.rightAnchor="-0.5" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#helpWindowClose" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TextArea blendMode="MULTIPLY" editable="false" layoutX="127.0" layoutY="110.0" prefHeight="28.0" prefWidth="180.0" text="Window Made by Konrad" wrapText="true" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

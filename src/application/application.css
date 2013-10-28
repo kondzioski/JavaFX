@@ -1,0 +1,12 @@
+
+#mainWindow {
+	-fx-background-color:rgb(77,77,77);
+}
+
+#Receiver {
+	-fx-background-color:rgb(253,222,165);
+}
+
+#helpWindow{
+	-fx-background-color:rgb(77,77,77);
+}
