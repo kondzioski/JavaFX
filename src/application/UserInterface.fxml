@@ -40,7 +40,14 @@
       </font>
     </Button>
     <TextArea fx:id="Receiver" editable="false" layoutX="444.0" layoutY="333.0" prefHeight="237.0" prefWidth="494.0" wrapText="true" />
-    <Button id="StartButton" layoutX="51.0" layoutY="165.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Start" />
+    <Button id="StartButton" alignment="CENTER_RIGHT" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="10.0" layoutX="51.0" layoutY="165.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="123.0" text="Start" textAlignment="CENTER" textOverrun="ELLIPSIS" underline="false" visible="true" wrapText="false">
+      <font>
+        <Font size="18.0" />
+      </font>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Button>
     <Button layoutX="51.0" layoutY="240.0" mnemonicParsing="false" onMousePressed="#sendMail" prefHeight="54.0" prefWidth="123.0" text="Mail" />
   </children>
   <stylesheets>
